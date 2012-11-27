@@ -9,6 +9,7 @@
     <body>
         <p>Intro paragraph</p>
         <select name="picker" id="picker">
+            <option value="--">--</option>
             {% for person in remaining_people %}
                 <option value="{{ person.id }}">{{ person }}</option>
             {% endfor %}

@@ -5,7 +5,13 @@ $(document).ready(function()
     $('#reveal').click(function()
     {
         var personId = $("#picker").val();
+        if(personId == '--')
+            return;
+
         _this = $(this);
+        _this.unbind('click');
+        _this.css({'cursor': 'auto'});
+
         $.get('/pick/' + personId, function(name)
             {
                 _this.find('span.name').text(name.trim());
