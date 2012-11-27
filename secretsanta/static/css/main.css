@@ -5,17 +5,26 @@ html, body
     height: 100%;
     overflow: hidden;
     font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+    background-color: #820a0a;
 }
 
 #wrapper
 {
     margin: 0 auto;
-    width: 800px;
-    padding: 10px;
-    border-width: 0 1px;
-    border-color: #d5d5d5;
-    border-style: solid;
+    width: 760px;
+    padding: 20px;
     height: 100%;
+    box-shadow: 0 0 10px 8px rgba(0, 0, 0, .2);
+    background-color: #e3e2d1;
+}
+
+h1
+{
+    color: #820a0a;
+    font-size: 30px;
+    border-bottom: 1px solid #820a0a;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-weight: normal;
 }
 
 .choice
