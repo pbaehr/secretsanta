@@ -1,0 +1,62 @@
+#reveal
+{
+    position: relative;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+}
+
+#reveal div
+{
+    position: absolute;
+    top: 0;
+    height: 128px;
+    width: 128px;
+} 
+
+#reveal div.left
+{
+    background-image: url(../img/present_left.png);
+    left: 0;
+}
+
+#reveal div.right
+{
+    background-image: url(../img/present_right.png);
+    right: 0;
+}
+
+#reveal p
+{
+    width: 104px;
+    height: 72px;
+    position: absolute;
+    background-color: #c1db7d;
+    color: #4d5c29;
+    top: 15px;
+    left: 12px;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    border: 1px solid #4d5c29;
+    overflow: hidden;
+    display: none;
+}
+
+#reveal p span.name
+{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#reveal p a
+{
+    color: white;
+    text-shadow: 1px 1px 1px #4d5c29;
+    text-decoration: none;
+}
+
+#reveal p a:hover
+{
+    text-decoration: underline;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Secret Santa 2012</title>
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/main.css" />
+        <script src="{{ STATIC_URL }}js/jquery-1.8.3.min.js"></script>
+        <script src="{{ STATIC_URL }}js/main.js"></script>
+    </head>
+    <body>
+        <p>Intro paragraph</p>
+        <select name="picker" id="picker">
+            {% for person in remaining_people %}
+                <option value="{{ person.id }}">{{ person }}</option>
+            {% endfor %}
+        </select>
+        <div id="reveal">
+            <p>
+                Your Secret Santa pick is
+                <br />
+                <span class="name"></span>.
+                <br />
+                <a href="#" class="reset">I've got it, reset the page!</a>
+            </p>
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </body>
+</html>
