@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django.shortcuts import render_to_response, get_object_or_404
 from django.template import RequestContext
 
@@ -17,6 +19,9 @@ def show_pick(request, person_id):
     if not person.viewed:
         pick = person.pick
         person.viewed = True
+        person.viewed_at = datetime.now()
+        person.ip = request.META.get('REMOTE_ADDR', '0.0.0.0')
+
         person.save()
     return render_to_response('show-pick.html',
                               {'pick': pick},
