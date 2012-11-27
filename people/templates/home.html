@@ -7,23 +7,27 @@
         <script src="{{ STATIC_URL }}js/main.js"></script>
     </head>
     <body>
-        <p>Intro paragraph</p>
-        <select name="picker" id="picker">
-            <option value="--">--</option>
-            {% for person in remaining_people %}
-                <option value="{{ person.id }}">{{ person }}</option>
-            {% endfor %}
-        </select>
-        <div id="reveal">
-            <p>
-                Your Secret Santa pick is
-                <br />
-                <span class="name"></span>.
-                <br />
-                <a href="#" class="reset">I've got it, reset the page!</a>
+        <div id="wrapper">
+            <p>Intro paragraph</p>
+            <p class="choice">I am
+                <select name="picker" id="picker">
+                    <option value="--">--</option>
+                    {% for person in remaining_people %}
+                        <option value="{{ person.id }}">{{ person }}</option>
+                    {% endfor %}
+                </select>
             </p>
-            <div class="left"></div>
-            <div class="right"></div>
+            <div id="reveal">
+                <p>
+                    Your Secret Santa pick is
+                    <br />
+                    <span class="name"></span>.
+                    <br />
+                    <a href="#" class="reset">I've got it, reset the page!</a>
+                </p>
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
         </div>
     </body>
 </html>

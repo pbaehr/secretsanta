@@ -1,3 +1,28 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+}
+
+#wrapper
+{
+    margin: 0 auto;
+    width: 800px;
+    padding: 10px;
+    border-width: 0 1px;
+    border-color: #d5d5d5;
+    border-style: solid;
+    height: 100%;
+}
+
+.choice
+{
+    text-align: center;
+}
+
 #reveal
 {
     position: relative;
@@ -48,6 +73,7 @@
 {
     font-size: 120%;
     font-weight: bold;
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
 }
 
 #reveal p a
