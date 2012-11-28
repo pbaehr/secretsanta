@@ -9,8 +9,9 @@
     <body>
         <div id="wrapper">
             <h1>Secret Santa 2012</h1>
-            <p>Intro paragraph</p>
             {% if remaining_people %}
+                <p>To find out who you're buying for, <strong>choose your name below and click the present</strong>.</p>
+                <p>A word of warning: once you leave/close/reset the page, you won't be able to see your pick again, so write it on your hand or something. If everything goes terribly wrong and you don't know or can't remember who you picked, <a href="mailto:pete.baehr@gmail.com">send me a message</a> and I'll get it straightened out.</p>
                 <p class="choice">I am
                     <select name="picker" id="picker">
                         <option value="--">--</option>
