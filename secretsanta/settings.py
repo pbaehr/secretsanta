@@ -1,5 +1,7 @@
 import os.path
 
+import dj_database_url
+
 
 SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 
@@ -22,6 +24,8 @@ DATABASES = {
         'PORT': '',
     }
 }
+
+DATABASES['default'] = dj_database_url.config()
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
