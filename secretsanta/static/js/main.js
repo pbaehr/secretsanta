@@ -4,11 +4,14 @@ $(document).ready(function()
 {
     $('#reveal').click(function()
     {
-        $("#picker").attr("disabled", "disabled");
         var personId = $("#picker").val();
         if(personId == '--')
+        {
+            $("#picker").focus();
             return;
+        }
 
+        $("#picker").attr("disabled", "disabled");
         _this = $(this);
         _this.unbind('click');
         _this.css({'cursor': 'auto'});
