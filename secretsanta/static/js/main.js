@@ -4,6 +4,7 @@ $(document).ready(function()
 {
     $('#reveal').click(function()
     {
+        $("#picker").attr("disabled", "disabled");
         var personId = $("#picker").val();
         if(personId == '--')
             return;

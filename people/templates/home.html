@@ -10,14 +10,18 @@
         <div id="wrapper">
             <h1>Secret Santa 2012</h1>
             <p>Intro paragraph</p>
-            <p class="choice">I am
-                <select name="picker" id="picker">
-                    <option value="--">--</option>
-                    {% for person in remaining_people %}
-                        <option value="{{ person.id }}">{{ person }}</option>
-                    {% endfor %}
-                </select>
-            </p>
+            {% if remaining_people %}
+                <p class="choice">I am
+                    <select name="picker" id="picker">
+                        <option value="--">--</option>
+                        {% for person in remaining_people %}
+                            <option value="{{ person.id }}">{{ person }}</option>
+                        {% endfor %}
+                    </select>
+                </p>
+            {% else %}
+                <p>It looks like everyone has picked. If you're seeing this message and you haven't, please <a href="mailto:pete.baehr@gmail.com">let me know</a>.</p>
+            {% endif %}
             <div id="reveal">
                 <p>
                     Your Secret Santa pick is

@@ -32,6 +32,11 @@ h1
     text-align: center;
 }
 
+p a
+{
+    color: #820a0a;
+}
+
 #reveal
 {
     position: relative;
