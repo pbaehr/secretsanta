@@ -12,6 +12,7 @@ $(document).ready(function()
         _this.unbind('click');
         _this.css({'cursor': 'auto'});
 
+        $("#tearing")[0].play();
         $.get('/pick/' + personId, function(name)
             {
                 _this.find('span.name').text(name.trim());
