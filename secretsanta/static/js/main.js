@@ -12,9 +12,9 @@ $(document).ready(function()
         _this.unbind('click');
         _this.css({'cursor': 'auto'});
 
-        $("#tearing")[0].play();
         $.get('/pick/' + personId, function(name)
             {
+                $("#tearing")[0].play();
                 _this.find('span.name').text(name.trim());
                 _this.find('p').show();
                 _this.animate({'width': 500});
