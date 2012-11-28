@@ -16,9 +16,7 @@ class Command(BaseCommand):
         partners.rotate()                    # shift everyone over by one
 
         # Clear each person's pick if they have one
-        for person in people:
-            person.pick = None
-            person.save()
+        Person.objects.all().update(pick=None)
 
         # Assign each person their partner and save the record
         for person, partner in zip(people, partners):

@@ -7,6 +7,4 @@ class Command(BaseCommand):
     help = 'Reset viewed flag for all users (convenient when testing)'
 
     def handle(self, *args, **kwargs):
-        for person in Person.objects.all():
-            person.viewed = False
-            person.save()
+        Person.objects.all().update(viewed=False)
