@@ -6,7 +6,7 @@ class Person(models.Model):
     pick = models.ForeignKey('Person', blank=True, null=True, unique=True)
     viewed = models.BooleanField(default=False)
     viewed_at = models.DateTimeField(blank=True, null=True)
-    ip = models.IPAddressField(blank=True)
+    ip = models.IPAddressField(default='0.0.0.0', blank=True)
 
     class Meta:
         verbose_name_plural = 'People'
