@@ -3,7 +3,6 @@ html, body
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
     font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
     background-color: #820a0a;
 }
@@ -14,6 +13,7 @@ html, body
     width: 760px;
     padding: 20px;
     height: 100%;
+    min-height: 750px;
     box-shadow: 0 0 10px 8px rgba(0, 0, 0, .2);
     background-color: #e8daae;
 }
