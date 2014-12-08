@@ -1,17 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Secret Santa 2013</title>
+        <title>Secret Santa 2014</title>
         <link rel="stylesheet" href="{{ STATIC_URL }}css/main.css" />
         <script src="{{ STATIC_URL }}js/jquery-1.8.3.min.js"></script>
         <script src="{{ STATIC_URL }}js/main.js"></script>
     </head>
     <body>
         <div id="wrapper">
-            <h1>Secret Santa 2013</h1>
+            <h1>Secret Santa 2014</h1>
             {% if remaining_people %}
-                <p>To find out who you're buying for, <strong>choose your name below and click the present</strong>.</p>
-                <p>A word of warning: once you leave/close/reset the page, you won't be able to see your pick again, so write it on your hand or something. If everything goes terribly wrong and you don't know or can't remember who you picked, <a href="mailto:pete.baehr@gmail.com">send me a message</a> and I'll get it straightened out.</p>
+		<p>Dear Jackie,</p>
+		<p>I'm sorry I didn't write an introduction last year. I was pretty busy, and most people on the list had done this a few times so I didn't think much explanation was needed.</p>
+		<p>This year, in the interest of fairness (and so that I have something new to explain), the budget for gifts will be dependent on income. Please refer to the following table to determine how much you should spend:</p>
+		<table>
+			<thead>
+				<tr>
+					<th class="title" colspan="2">IRS Table SS108 rev. 2</th>
+				</tr>
+				<tr>
+					<th>Gross Annual Income (Individual)</th>
+					<th>Gift Budget</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="odd">
+					<td>$0 &mdash; $10,000,000</td>
+					<td>$20</td>
+				</tr>
+				<tr>
+					<td>$10,000,000 &mdash; $20,000,000</td>
+					<td>$22</td>
+				</tr>
+				<tr class="odd">
+					<td>$20,000,000+</td>
+					<td>$23!</td>
+				</tr>
+			</tbody>
+		</table>
+                <p>Once you've worked out how much to spend, find out who you're buying for by <strong>choosing your name below and clicking the present</strong>.</p>
+                <p>As always, remember: once you leave/close/reset the page, you won't be able to see your pick again, so maybe use a mnemonic device to remember it? Like, if you got Tim, maybe you can remember "Terrific Item Monk" instead? I don't know. Probably just writing it down is OK, too.</p>
+<p>If everything goes terribly wrong and you don't know or can't remember who you picked (should've used a mnemonic!), <a href="mailto:pete.baehr@gmail.com">send me a message</a> and I'll get it straightened out.</p>
                 <p class="choice">I am
                     <select name="picker" id="picker">
                         <option value="--">--</option>

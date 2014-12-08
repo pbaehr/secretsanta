@@ -102,3 +102,27 @@ p a
 {
     text-decoration: underline;
 }
+
+table {
+    background-color: white;
+    border: 1px solid #333;
+    border-spacing: 0;
+}
+
+td, th {
+	padding: 5px;
+}
+
+th {
+	color: #820a0a;
+}
+
+th.title {
+	background-color: #820a0a;
+	color: white;
+	text-align: left;
+}
+
+tr.odd {
+	background-color: #ddd;
+}
