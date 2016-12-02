@@ -1,30 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Secret Santa 2015</title>
+        <title>Secret Santa 2016</title>
         <link rel="stylesheet" href="{{ STATIC_URL }}css/main.css" />
         <script src="{{ STATIC_URL }}js/jquery-1.8.3.min.js"></script>
         <script src="{{ STATIC_URL }}js/main.js"></script>
     </head>
     <body>
         <div id="wrapper">
-            <h1>Secret Santa 2015</h1>
+            <h1>Secret Santa 2016</h1>
             {% if remaining_people %}
-              <p>I'm pretty sure everyone on the list this year's done this before, but just in case, here's the story.</p>
-              <p>First, figure out who you are. Not, like, in spiritual sense. We just need a name. Find yourself on the list below.</p>
-              <p>Next, click the present. A name will be (dramatically) revealed.<p>
-              <p>Remember that name. It will be gone when you reset the page.</p>
-              <p>If you have a child who is too young to use a computer, don't forget to choose on their behalf. You'll probably have to buy the present for them, too (lazy freeloading babies!).</p>
-              <h3>FAQ</h3>
-              <p>Q. What should I get for Jackie?<br />
-                 A. I don't know, maybe like a basket or something? Or a book about baskets? I think she likes baskets. I saw her looking at one really intently once. Like she wished it were hers. Whoever you are, buy Jackie a basket.</p>
-              <p>Q. I am using AOL 9.0 and the page isn't working?<br />
-                 A. Why are you doing this to me?!</p>
-              <p>Q. I forgot who I picked!<br />
-                 A. All inquiries must be in the form of a question.</p>
-              <p>Q. I forgot who I picked?<br />
-                 A. OK, just <a href="mailto:pete.baehr@gmail.com">shoot me an e-mail</a> and I'll help you sort it out.</p>
-
+            <p>This hasn't really changed in the last few years but for anyone just joining us:</p>
+            <ol>
+              <li>Pick your name from the list below.</li>
+              <li>Click the present.</li>
+              <li>Gasp at the amazing animated reveal.</li>
+              <li>The person revealed is who you are buying a present for.</li>
+              <li>You can only do this once, so remember that person!</li>
+            </ol>
                 <p class="choice">I am
                     <select name="picker" id="picker">
                         <option value="--">--</option>
